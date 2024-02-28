@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&display=swap");
+
+:root {
+  font-family: "Arimo", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --borderColor: hsl(23deg, 11%, 76%);
+  --textColor: rgb(26, 45, 37);
+  --textColor1: rgb(254, 254, 254);
+  --shadowColor: rgba(64, 64, 64, 0.8);
+  --bgColor: hsl(0, 0%, 93%);
+  --danger: #fc7878;
+  font-weight: 400;
+}
+
+.container {
+  min-width: 28rem;
+  min-height: 12.5rem;
+  /* height: 100vh; */
+  border: 1px solid var(--borderColor);
+  color: var(--textColor);
+  padding: 0.2rem 1rem;
+  box-shadow: 2px 8px 12px var(--shadowColor);
+  /* margin: 2rem auto; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  padding: 8px 12px;
+  outline: none;
+  border: 1px solid var(--borderColor);
+  color: var(--textColor1);
+  background-color: var(--textColor);
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.taskComponent {
+  padding: 0.5rem;
+  background-color: var(--bgColor);
+  color: var(--textColor);
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  /* border: solid var(--textColor1); */
+  /* border-radius: 0.8rem; */
+
+  h3 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h3,
+  p {
+    margin: 0rem;
+    line-height: 1.5rem;
+  }
+}
+
+.faTimes {
+  color: var(--danger);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.reminder {
+  border-left: 4px solid var(--textColor);
+}
+
+/*====================================================== ADD TASK FORM COMPONENT =================================================== */
+.form {
+  padding: 2rem;
+  display: grid;
+  gap: 1rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 60%;
+  justify-content: space-between;
+}
+
+input[type="text"] {
+  padding: 8px 4px;
+  outline: none;
+  border: 1px solid var(--borderColor);
+  border-radius: 4px;
+  transition: 250ms ease-in-out;
+}
+
+input[type="text"]:focus {
+  border: 1px solid var(--shadowColor);
+  box-shadow: 0px 4px 2px var(--bgColor);
+}
