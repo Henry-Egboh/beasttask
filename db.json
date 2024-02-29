@@ -17,6 +17,12 @@
       "text": "Alternating Field",
       "date": "Sep 5 at 1:12pm",
       "reminder": true
+    },
+    {
+      "id": "93a4",
+      "text": "Make it Work",
+      "date": "June 14 at 12:00pm",
+      "reminder": true
     }
   ]
 }
